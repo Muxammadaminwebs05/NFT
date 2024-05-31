@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+.sidebar{
+    width: 100px;
+    background: #1D1932;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 25px;
+
+}
+.sidebar1{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.sidebar i{
+    font-size: 24px;
+    color: #65646A;
+    padding: 10px 8px 10px 12px;
+}
+.sidebar i:hover{
+    background: #6F4FF2;
+    border-radius: 6px;
+    color: white;
+}
+.mainbar{
+    max-width: 1820px;
+    width: 100%;
+    background: #131129;
+    padding: 30px 70px;
+    overflow-y: scroll;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+.input-wrap{
+    width: 380px;
+    background: #1D1932;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 15px;
+}
+.input-wrap input{
+    padding: 10px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+
+}
+.input-wrap input:focus{
+    outline: none;
+}
+.input-wrap i{
+    font-size: 21px;
+    color: white;
+}
+.profil-data{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+.profil-data i{
+    font-size: 21px;
+    color: white;
+}
+.profil-data img{
+    border-radius: 50%;
+}
+
+.nft_cards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.nft_card1{
+    width: 595px;
+    background-image: url(./imgs/Discover\ \(1\).png);
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 21px;
+}
+.nft_card1 h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 39px;
+    text-align: left;
+    color: white;
+}
+.nft_card1 p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 10px 0px 30px 0px;
+    color: white;
+}
+.btns{
+    display: flex;
+    gap: 20px;
+}
+button{
+    width: 133px;
+    padding: 10px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+}
+.btns button:nth-child(1){
+    background: #6F4FF2;
+}
+.btns button:nth-child(2){
+    background: #DC3546;
+}
+.trend{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+.list{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.item{
+    list-style-type: none;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+.link:hover{
+    background: #6F4FF2;
+}
+
+.cards{
+    margin-top: 30px;
+    display: flex;
+    gap: 62px;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 282px;
+    padding: 20px;
+    background: #1D1932;
+    border-radius: 18px;
+}
+.card h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 30px 0px 20px 0px;
+
+
+}
+.eth{
+    color: #6F4FF2;
+    text-align: end;
+    padding: 11px 0px 5px 0px;
+}
+.card span{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+
+}
+.card button{
+    width: 242px;
+    padding: 10px;
+    background: #6F4FF2;
+    color: white;
+    border: none;
+    margin-top: 30px;
+}
+@media (max-width:1895px){
+    .cards{
+        gap: 20px;
+        justify-content: center;
+    }
+}
+@media (max-width:1440px){
+    .nft_cards{
+        gap: 20px;
+    }
+    .nft_card1{
+        max-width: 580px;
+        width: 100%;
+    }
+}
+@media (max-width:1425px){
+    .cards{
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .card{
+        margin: 0 auto;
+    }
+}
+@media (max-width:1000px){
+    .nft_cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards{
+        width: 100%;
+        gap: 10px;
+    }
+    .card{
+        max-width: 282px;
+        width: 100%;
+    }
+}
+@media (max-width:790px){
+    body{
+        flex-direction: column;
+    }
+    .sidebar{
+        order: 2;
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+    }
+    .sidebar1{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .mainbar{
+        order: 1;
+    }   
+}
